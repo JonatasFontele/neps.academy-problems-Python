@@ -10,7 +10,7 @@ for i in range(len(V)): # Transformar todos os elementos da lista de string para
 longest_sequence = 0  # Tamanho da maior sequencia
 current_sequence = 1  # Tamanho da sequencia atual (estamos representando que o primeiro elemento representa uma sequência de tamanho 1)
 
-for i in range(1, len(V)):
+for i in range(1, N):
     if V[i] == V[i - 1]:
         current_sequence += 1  # Se o número atual é igual ao anterior o tamanho da sequência aumenta
     else:
