@@ -9,7 +9,7 @@ for i in range(len(I)): # Transformar todos os elementos da lista de string para
 A = 0 # Lâmpada A apagada
 B = 0 # Lâmpada B apagada
 
-for i in range(len(I)):
+for i in range(N):
     if I[i] == 1: # Interruptor I1
         A += 1
     if I[i] == 2: # Interruptor I2
