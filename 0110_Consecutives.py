@@ -3,10 +3,7 @@
 
 N = int(input())
 V = input().split() # Lista de String
-
-for i in range(len(V)): # Transformar todos os elementos da lista de string para inteiros
-    V[i] = int(V[i])
-
+V = [int(V[i]) for i in range(len(V))] # Transformar todos os elementos da lista de string para inteiros
 longest_sequence = 0  # Tamanho da maior sequencia
 current_sequence = 1  # Tamanho da sequencia atual (estamos representando que o primeiro elemento representa uma sequência de tamanho 1)
 
