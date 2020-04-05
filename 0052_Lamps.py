@@ -2,10 +2,7 @@
 # OBI 2016 - Primeira Fase - Nível Júnior
 N = int(input())
 I = input().split()
-
-for i in range(len(I)): # Transformar todos os elementos da lista de string para inteiros
-    I[i] = int(I[i])
-
+I = [int(I[i]) for i in range(len(I))] # Transformar todos os elementos da lista de string para inteiros
 A = 0 # Lâmpada A apagada
 B = 0 # Lâmpada B apagada
 
