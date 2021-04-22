@@ -10,10 +10,10 @@ def consult_cue(stock_queries):
     # Creates a dictionary with {quantities_repeated: quantity}
     count_amount = dict(Counter(count_queries.values()))
     for key, value in dict(count_amount).items():
-        # if quantities_repeated is odd, we add 1 & multiply for the quantity. Since Mr Jorge makes 2 cues and stores 1.
+        # quantities_repeated is odd. Ex.: 3 x 100 cm (4 made) + 3 x 80 cm (4 made) + 3 x 50 cm (4 made) = 12 cues made
         if key % 2:
             made += (key + 1) * value
-        # if quantities_repeated is even, we multiply for the quantity. Since Mr Jorge makes 2 cues and sends both.
+        # quantities_repeated is even. Ex.: 2 x 100 cm (2 made) + 2 x 80 cm (2 made) + 2 x 50 cm (2 made) = 6 cues made
         else:
             made += key * value
     return made
@@ -29,6 +29,7 @@ def consult_cue(stock_queries):
     # return made
 
 
+# This validation makes it slower, but still less than 1 sec for 10^5
 def validate(c, stock_queries):
     constraints = True
     for number in stock_queries:
