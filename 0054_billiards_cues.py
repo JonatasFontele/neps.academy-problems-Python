@@ -17,7 +17,7 @@ def consult_cue(stock_queries):
         # quantities_repeated is even. Ex.: 2 x 100 cm (2 made) + 2 x 80 cm (2 made) + 2 x 50 cm (2 made) = 6 cues made
         else:
             made += key * value
-    return print(made)
+    return made
 
 # This is the second fastest solution
 # def consult_cue2(stock_queries):
@@ -52,7 +52,7 @@ def consult_cue(stock_queries):
 def main():
     int(input())
     stock_queries = list(map(int, input().split()))
-    consult_cue(stock_queries)
+    print(consult_cue(stock_queries))
 
 
 if __name__ == "__main__":
