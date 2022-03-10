@@ -2,9 +2,10 @@
 # OBI 2014 - Primeira Fase - Nível Júnior
 P, R = map(int, input().split())
 
-if P == 1 and R == 1:
-    print("A")
-elif P == 1 and R == 0:
-    print("B")
-else:
+if P == 0:
     print("C")
+else:
+    if R == 0:
+        print("B")
+    else:
+        print("A")
