@@ -1,9 +1,5 @@
 # Problema Zerinho ou Um
-A, B, C = input().split()
-
-A = int(A)
-B = int(B)
-C = int(C)
+A, B, C = map(int, input().split())
 
 if A != B and B == C:
     print("A")
