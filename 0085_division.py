@@ -1,8 +1,4 @@
-A = input()
-B = input()
+A = float(input())
+B = float(input())
 
-A = float(A)
-B = float(B)
-
-S = A/B
-print("{:.2f}".format(S))
+print(f"{A/B:.2f}")
