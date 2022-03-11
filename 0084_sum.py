@@ -1,5 +1,4 @@
 X = int(input())
 Y = int(input())
 
-S = X+Y
-print(S)
+print(X+Y)
